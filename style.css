@@ -1,0 +1,1463 @@
+```css
+/* =========================================================
+   1. RESET & BASIC STYLES
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf4;
+    color: #3d3028;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   2. CSS VARIABLES
+   ========================================================= */
+
+:root {
+    --primary: #d97745;
+    --primary-dark: #b85c2d;
+
+    --cream: #fffaf4;
+    --light-cream: #fff1df;
+
+    --brown: #3d3028;
+    --dark-brown: #2d231e;
+
+    --text-light: #806c5e;
+
+    --white: #ffffff;
+
+    --border: #ead9c7;
+
+    --green: #3d8b63;
+    --light-green: #e9f6ee;
+
+    --red: #c94c4c;
+    --light-red: #fff0f0;
+
+    --shadow: 0 10px 30px rgba(61, 48, 40, 0.08);
+}
+
+
+/* =========================================================
+   3. REUSABLE CLASSES
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.small-heading {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   4. NAVBAR
+   ========================================================= */
+
+.header {
+    width: 100%;
+
+    background-color: var(--white);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+
+    color: var(--brown);
+
+    white-space: nowrap;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--brown);
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-button {
+    background-color: var(--primary);
+    color: var(--white);
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   5. HERO SECTION
+   ========================================================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    padding: 80px 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 62px;
+
+    line-height: 1.1;
+
+    color: var(--brown);
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-text {
+    max-width: 560px;
+
+    color: var(--text-light);
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+
+    max-width: 500px;
+}
+
+.hero-image img {
+    height: 520px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   6. QUICK ACTIONS
+   ========================================================= */
+
+.quick-actions {
+    background-color: var(--light-cream);
+
+    padding: 30px 0;
+}
+
+.quick-action-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.quick-action-card {
+    background-color: var(--white);
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    border: 1px solid var(--border);
+
+    transition: all 0.3s ease;
+}
+
+.quick-action-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow);
+}
+
+.quick-action-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-cream);
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+.quick-action-card h3 {
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.quick-action-card p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+.arrow {
+    margin-left: auto;
+
+    color: var(--primary);
+
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   7. COMMON SECTION HEADING
+   ========================================================= */
+
+.problem-section,
+.how-it-works,
+.vets-section {
+    padding: 100px 30px;
+}
+
+.section-heading {
+    max-width: 720px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    color: var(--brown);
+
+    margin-bottom: 18px;
+}
+
+.section-heading > p:last-child {
+    color: var(--text-light);
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   8. PROBLEM SECTION
+   ========================================================= */
+
+.problem-section {
+    background-color: var(--cream);
+}
+
+.problem-cards {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.problem-card {
+    background-color: var(--white);
+
+    padding: 30px 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-cream);
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.problem-card p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   9. HOW IT WORKS
+   ========================================================= */
+
+.how-it-works {
+    background-color: var(--light-cream);
+}
+
+.steps {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.step {
+    text-align: center;
+
+    background-color: var(--white);
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    font-size: 12px;
+
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+.step-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   10. REPORT SECTION
+   ========================================================= */
+
+.report-section {
+    background-color: var(--cream);
+
+    padding: 100px 30px;
+}
+
+.report-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.report-info h2 {
+    font-size: 45px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.report-info > p {
+    color: var(--text-light);
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Emergency note */
+
+.emergency-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background-color: var(--light-red);
+
+    border-left: 4px solid var(--red);
+
+    border-radius: 8px;
+
+    margin-top: 25px;
+}
+
+.emergency-note span {
+    font-size: 22px;
+}
+
+.emergency-note p {
+    color: #754040;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   11. REPORT FORM
+   ========================================================= */
+
+.dog-form {
+    background-color: var(--white);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group > label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background-color: var(--cream);
+
+    color: var(--brown);
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+}
+
+
+/* Checkbox section */
+
+.checkbox-group {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.checkbox-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: var(--primary);
+}
+
+.emergency-checkbox {
+    color: var(--red);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   12. VETERINARIAN SECTION
+   ========================================================= */
+
+.vets-section {
+    background-color: var(--white);
+}
+
+
+/* Location box */
+
+.location-box {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+
+    padding: 25px 30px;
+
+    background-color: var(--light-cream);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.location-box p {
+    color: var(--text-light);
+
+    font-size: 15px;
+}
+
+
+/* Vet list */
+
+.vet-list {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* Vet card */
+
+.vet-card {
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px;
+
+    background-color: var(--cream);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.vet-card:hover {
+    box-shadow: var(--shadow);
+
+    transform: translateY(-3px);
+}
+
+
+/* Vet icon */
+
+.vet-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-green);
+
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+
+/* Vet details */
+
+.verified {
+    display: inline-block;
+
+    color: var(--green);
+
+    background-color: var(--light-green);
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.vet-details h3 {
+    font-size: 20px;
+
+    margin-bottom: 3px;
+}
+
+.vet-details p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+.vet-details .distance {
+    margin-top: 8px;
+}
+
+.vet-details .availability {
+    color: var(--green);
+
+    font-weight: 600;
+
+    margin-top: 3px;
+}
+
+
+/* Vet buttons */
+
+.vet-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.vet-actions .btn {
+    min-width: 120px;
+
+    text-align: center;
+
+    padding: 10px 15px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   13. JOIN VETERINARIAN SECTION
+   ========================================================= */
+
+.join-vet-section {
+    background-color: var(--light-cream);
+
+    padding: 70px 30px;
+}
+
+.join-vet-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.join-vet-container h2 {
+    font-size: 35px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+.join-vet-container p:not(.small-heading) {
+    color: var(--text-light);
+
+    max-width: 600px;
+}
+
+
+/* =========================================================
+   14. DONATION SECTION
+   ========================================================= */
+
+.donate-section {
+    background-color: var(--brown);
+
+    color: var(--white);
+
+    padding: 100px 30px;
+
+    text-align: center;
+}
+
+.donate-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+.donate-section .small-heading {
+    color: #f3b08b;
+}
+
+.donate-section h2 {
+    font-size: 45px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.donate-section > .donate-content > p {
+    color: #dbcac0;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Donation buttons */
+
+.donation-options {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+.donation-option {
+    padding: 13px 25px;
+
+    background-color: transparent;
+
+    color: var(--white);
+
+    border: 1px solid #806c5e;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.donation-option:hover {
+    background-color: var(--primary);
+
+    border-color: var(--primary);
+}
+
+.donation-option:focus {
+    background-color: var(--primary);
+
+    border-color: var(--primary);
+
+    outline: none;
+}
+
+
+/* =========================================================
+   15. VOLUNTEER SECTION
+   ========================================================= */
+
+.volunteer-section {
+    background-color: var(--cream);
+
+    padding: 70px 30px;
+}
+
+.volunteer-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.volunteer-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-cream);
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+.volunteer-container h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+}
+
+.volunteer-container p:not(.small-heading) {
+    color: var(--text-light);
+
+    max-width: 600px;
+}
+
+
+/* =========================================================
+   16. FOOTER
+   ========================================================= */
+
+.footer {
+    background-color: var(--dark-brown);
+
+    color: var(--white);
+
+    padding-top: 60px;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1.5fr;
+
+    gap: 50px;
+}
+
+.footer-brand .logo {
+    color: var(--white);
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 320px;
+
+    color: #bcaea5;
+}
+
+.footer h3 {
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #bcaea5;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-contact p {
+    color: #bcaea5;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #463931;
+
+    text-align: center;
+
+    padding: 20px 30px;
+
+    color: #95867d;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   17. TABLET RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* Navbar */
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+
+    /* Problem cards */
+
+    .problem-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Steps */
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Report */
+
+    .report-container {
+        grid-template-columns: 1fr;
+
+        max-width: 750px;
+
+        gap: 40px;
+    }
+
+
+    /* Veterinarian */
+
+    .vet-card {
+        grid-template-columns: auto 1fr;
+    }
+
+    .vet-actions {
+        grid-column: 2;
+
+        flex-direction: row;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================================
+   18. MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        width: 95%;
+
+        padding: 15px 0;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 15px;
+
+        order: 3;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        width: 90%;
+
+        padding: 60px 0;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 350px;
+
+        border-radius: 20px;
+    }
+
+
+    /* Quick actions */
+
+    .quick-action-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-action-card {
+        padding: 20px;
+    }
+
+
+    /* Section headings */
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* Sections */
+
+    .problem-section,
+    .how-it-works,
+    .vets-section,
+    .report-section,
+    .donate-section {
+        padding: 70px 20px;
+    }
+
+
+    /* Problem cards */
+
+    .problem-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Steps */
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Report */
+
+    .report-info {
+        text-align: center;
+    }
+
+    .report-info h2 {
+        font-size: 36px;
+    }
+
+    .dog-form {
+        padding: 25px;
+    }
+
+
+    /* Checkboxes */
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Location */
+
+    .location-box {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Veterinarian card */
+
+    .vet-card {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .vet-icon {
+        margin: 0 auto;
+    }
+
+    .vet-actions {
+        grid-column: auto;
+
+        flex-direction: column;
+    }
+
+    .vet-actions .btn {
+        width: 100%;
+    }
+
+
+    /* Join vet */
+
+    .join-vet-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .join-vet-container h2 {
+        font-size: 30px;
+    }
+
+
+    /* Donation */
+
+    .donate-section h2 {
+        font-size: 35px;
+    }
+
+
+    /* Volunteer */
+
+    .volunteer-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .volunteer-icon {
+        margin: 0 auto;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+
+
+/* =========================================================
+   19. VERY SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .donation-option {
+        width: 45%;
+    }
+}
+```
