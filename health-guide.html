@@ -1,0 +1,311 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawCare Guide | PawConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/health-guide.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">🐾 PawConnect</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#report">Report a Dog</a></li>
+                <li><a href="index.html#vets">Find a Vet</a></li>
+                <li><a href="health-guide.html">PawCare Guide</a></li>
+                <li><a href="index.html#donate">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="care-hero">
+            <p class="small-heading">KNOWLEDGE CAN SAVE LIVES</p>
+
+            <h1>Understand their needs.<br>
+                <span>Protect their lives.</span>
+            </h1>
+
+            <p>
+                Learn about common street-dog diseases, winter
+                hazards, warning signs and responsible ways to help.
+            </p>
+
+            <a href="#health-topics" class="btn btn-primary">
+                Explore Health Guides
+            </a>
+        </section>
+
+        <!-- Emergency warning -->
+        <section class="care-alert">
+            <h2>🚨 Recognize an emergency?</h2>
+
+            <p>
+                Severe bleeding, difficulty breathing, collapse,
+                seizures or suspected poisoning require urgent
+                veterinary attention.
+            </p>
+
+            <a href="index.html#report" class="btn btn-primary">
+                Report a Dog in Need
+            </a>
+        </section>
+
+        <!-- Search and categories -->
+        <section class="care-library" id="health-topics">
+
+            <div class="section-heading">
+                <p class="small-heading">PAWCARE LIBRARY</p>
+                <h2>What would you like to learn?</h2>
+                <p>Explore health risks and practical care advice.</p>
+            </div>
+
+            <label for="guide-search">Search health topics</label>
+
+            <input
+                type="search"
+                id="guide-search"
+                placeholder="Search diseases, symptoms or hazards..."
+            >
+
+            <div class="care-filters">
+                <button type="button" data-category="all">All Topics</button>
+                <button type="button" data-category="disease">Diseases</button>
+                <button type="button" data-category="winter">Winter Safety</button>
+                <button type="button" data-category="emergency">Emergencies</button>
+                <button type="button" data-category="prevention">Prevention</button>
+            </div>
+
+            <div class="care-grid">
+
+                <article class="care-card"
+                    data-category="disease"
+                    data-search="rabies bites saliva vaccination">
+
+                    <span class="care-icon">🦠</span>
+                    <p class="care-category">DISEASES</p>
+                    <h3>Rabies</h3>
+
+                    <p>
+                        Learn why rabies prevention matters,
+                        how exposure can occur and why bites
+                        or scratches need prompt medical advice.
+                    </p>
+
+                    <a href="#rabies-info">Learn about rabies →</a>
+                </article>
+
+                <article class="care-card"
+                    data-category="disease"
+                    data-search="mange skin itching hair loss parasites">
+
+                    <span class="care-icon">🐕</span>
+                    <p class="care-category">DISEASES</p>
+                    <h3>Mange and Skin Problems</h3>
+
+                    <p>
+                        Recognize signs such as intense itching,
+                        hair loss and irritated skin. Similar
+                        signs can have different causes.
+                    </p>
+
+                    <a href="#skin-info">Learn about skin health →</a>
+                </article>
+
+                <article class="care-card"
+                    data-category="winter"
+                    data-search="cold winter wet bedding shivering shelter">
+
+                    <span class="care-icon">❄️</span>
+                    <p class="care-category">WINTER SAFETY</p>
+                    <h3>Cold Exposure</h3>
+
+                    <p>
+                        Learn how wet fur, cold winds and lack
+                        of dry shelter can put vulnerable dogs
+                        at risk.
+                    </p>
+
+                    <a href="#winter-info">Explore winter safety →</a>
+                </article>
+
+                <article class="care-card"
+                    data-category="emergency"
+                    data-search="road accident bleeding injured wound trauma">
+
+                    <span class="care-icon">🩹</span>
+                    <p class="care-category">EMERGENCIES</p>
+                    <h3>Injuries and Accidents</h3>
+
+                    <p>
+                        Learn how to recognize serious injuries
+                        and seek professional help without
+                        putting yourself or the dog at risk.
+                    </p>
+
+                    <a href="#injury-info">Learn about injuries →</a>
+                </article>
+
+                <article class="care-card"
+                    data-category="disease"
+                    data-search="distemper parvovirus vomiting diarrhea fever">
+
+                    <span class="care-icon">🩺</span>
+                    <p class="care-category">DISEASES</p>
+                    <h3>Infectious Diseases</h3>
+
+                    <p>
+                        Discover why vaccination and veterinary
+                        assessment are important for diseases
+                        such as distemper and parvovirus.
+                    </p>
+
+                    <a href="#infection-info">Explore prevention →</a>
+                </article>
+
+                <article class="care-card"
+                    data-category="prevention"
+                    data-search="vaccination sterilization clean water food parasites">
+
+                    <span class="care-icon">❤️</span>
+                    <p class="care-category">PREVENTION</p>
+                    <h3>Everyday Dog Care</h3>
+
+                    <p>
+                        Understand the role of nutritious food,
+                        clean water, vaccination, sterilization
+                        and parasite prevention.
+                    </p>
+
+                    <a href="#prevention-info">Learn about prevention →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Basic educational information -->
+        <section class="care-details">
+
+            <article id="rabies-info">
+                <h2>Rabies: prevention is essential</h2>
+                <p>
+                    Rabies is a serious viral disease that affects
+                    mammals, including dogs and humans. Exposure
+                    may occur through bites or saliva entering
+                    broken skin or the eyes or mouth.
+                </p>
+                <p>
+                    Never attempt to examine a suspected rabid
+                    animal yourself. If a person is bitten or
+                    scratched, wash the area with soap and running
+                    water for 15 minutes and seek urgent medical
+                    assessment for rabies prevention.
+                </p>
+            </article>
+
+            <article id="skin-info">
+                <h2>Skin problems and mange</h2>
+                <p>
+                    Hair loss, scabs and itching may indicate
+                    parasites, infection or other skin conditions.
+                    A veterinarian can determine the cause and
+                    recommend suitable treatment.
+                </p>
+                <p>
+                    Avoid applying household chemicals or human
+                    medicines to a dog's skin.
+                </p>
+            </article>
+
+            <article id="winter-info">
+                <h2>Helping dogs during winter</h2>
+                <p>
+                    Provide a dry, sheltered place protected
+                    from wind and rain. Keep bedding dry and
+                    offer clean drinking water and appropriate food.
+                </p>
+                <p>
+                    Persistent shivering, weakness, confusion
+                    or unresponsiveness can indicate a serious
+                    problem and require urgent veterinary help.
+                </p>
+            </article>
+
+            <article id="injury-info">
+                <h2>Injuries and accidents</h2>
+                <p>
+                    Serious bleeding, difficulty breathing,
+                    inability to stand or major trauma require
+                    urgent veterinary assistance.
+                </p>
+                <p>
+                    Keep yourself safe, avoid unnecessary handling
+                    and contact a veterinarian or animal rescue
+                    service for instructions.
+                </p>
+            </article>
+
+            <article id="infection-info">
+                <h2>Infectious diseases</h2>
+                <p>
+                    Canine distemper and parvovirus can cause
+                    severe illness. Signs such as repeated vomiting,
+                    bloody diarrhea, breathing problems or marked
+                    weakness need prompt veterinary assessment.
+                </p>
+                <p>
+                    Vaccination is an important prevention measure.
+                    Do not diagnose a disease from symptoms alone.
+                </p>
+            </article>
+
+            <article id="prevention-info">
+                <h2>Prevention and everyday care</h2>
+                <p>
+                    Communities can support street dogs through
+                    suitable food, clean water, vaccination,
+                    humane population management and veterinary
+                    care when needed.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Final call to action -->
+        <section class="care-cta">
+            <h2>Seen a dog who needs help?</h2>
+            <p>
+                Share the dog's location and condition so
+                appropriate local help can be contacted.
+            </p>
+
+            <a href="index.html#report" class="btn btn-primary">
+                Report a Dog
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 PawConnect. Made with ❤️ for street dogs.</p>
+        </div>
+    </footer>
+
+    <script src="js/health-guide.js"></script>
+
+</body>
+</html>
+```
