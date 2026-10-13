@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawQuest | Small Acts, Big Paws</title>
+
+    <!-- Existing global CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- New CSS for PawQuest only -->
+    <link rel="stylesheet" href="css/pawquest.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="pq-header">
+        <nav class="pq-navbar">
+
+            <a href="index.html" class="pq-logo">
+                🐾 PawConnect
+            </a>
+
+            <button
+                class="pq-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="pq-nav-links">
+                ☰
+            </button>
+
+            <ul class="pq-nav-links" id="pq-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#report">Report a Dog</a></li>
+                <li><a href="health-guide.html">PawCare Guide</a></li>
+                <li><a href="index.html#vets">Find a Vet</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+
+            <a href="#submit-mission" class="pq-nav-button">
+                Join a Quest
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section class="pq-hero">
+
+            <div class="pq-hero-content">
+
+                <span class="pq-eyebrow">
+                    🐕 YOUR KINDNESS IS YOUR SUPERPOWER
+                </span>
+
+                <h1>
+                    Small Acts.<br>
+                    <span>Big Paws.</span>
+                </h1>
+
+                <p>
+                    Turn your kindness into action! Complete real-world
+                    missions, help street dogs in your community, earn
+                    Paw Points, and become a PawConnect champion.
+                </p>
+
+                <div class="pq-hero-buttons">
+                    <a href="#missions" class="pq-button pq-button-primary">
+                        Explore Missions →
+                    </a>
+
+                    <a href="#leaderboard" class="pq-button pq-button-secondary">
+                        🏆 Meet the Champions
+                    </a>
+                </div>
+
+                <div class="pq-hero-stats">
+
+                    <div class="pq-stat">
+                        <strong>01</strong>
+                        <span>Choose a mission</span>
+                    </div>
+
+                    <div class="pq-stat">
+                        <strong>02</strong>
+                        <span>Help a dog</span>
+                    </div>
+
+                    <div class="pq-stat">
+                        <strong>03</strong>
+                        <span>Earn Paw Points</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="pq-hero-image">
+                <!-- Replace with your own dog photograph -->
+                <img
+                    src="images/pawquest-hero.jpg"
+                    alt="A street dog receiving care from a volunteer">
+
+                <div class="pq-image-note">
+                    <span>💚</span>
+                    <div>
+                        <strong>Every Paw Matters</strong>
+                        <p>One kind action at a time.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+        <section class="pq-how section-padding">
+
+            <div class="pq-section-heading">
+                <span class="pq-eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+                <h2>How PawQuest Works</h2>
+
+                <p>
+                    Four simple steps to turn everyday kindness
+                    into something extraordinary.
+                </p>
+            </div>
+
+            <div class="pq-steps-grid">
+
+                <article class="pq-step-card">
+                    <span class="pq-step-number">01</span>
+                    <div class="pq-step-icon">🎯</div>
+                    <h3>Choose Your Quest</h3>
+                    <p>
+                        Pick a mission that matches your interests
+                        and what you can safely do.
+                    </p>
+                </article>
+
+                <article class="pq-step-card">
+                    <span class="pq-step-number">02</span>
+                    <div class="pq-step-icon">🐕</div>
+                    <h3>Make a Difference</h3>
+                    <p>
+                        Help with safe shelter, food, clean water,
+                        or connecting a dog to appropriate care.
+                    </p>
+                </article>
+
+                <article class="pq-step-card">
+                    <span class="pq-step-number">03</span>
+                    <div class="pq-step-icon">📸</div>
+                    <h3>Share Your Story</h3>
+                    <p>
+                        Submit your experience, a description,
+                        and optional supporting photographs.
+                    </p>
+                </article>
+
+                <article class="pq-step-card">
+                    <span class="pq-step-number">04</span>
+                    <div class="pq-step-icon">🏆</div>
+                    <h3>Earn Recognition</h3>
+                    <p>
+                        Get points after approval, collect badges,
+                        and climb the monthly leaderboard.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MISSION BOARD ================= -->
+        <section class="pq-missions section-padding" id="missions">
+
+            <div class="pq-section-heading">
+                <span class="pq-eyebrow">PICK YOUR NEXT ADVENTURE</span>
+
+                <h2>Choose Your PawQuest</h2>
+
+                <p>
+                    Real-world kindness is the game.
+                    Every completed mission can change a dog's day.
+                </p>
+            </div>
+
+            <div class="pq-mission-grid">
+
+                <!-- MISSION 1 -->
+                <article class="pq-mission-card">
+
+                    <div class="pq-mission-image">
+                        <img
+                            src="images/quest-shelter.jpg"
+                            alt="A dog resting in a dry, protected shelter">
+
+                        <span class="pq-mission-tag">
+                            Winter Care
+                        </span>
+                    </div>
+
+                    <div class="pq-mission-content">
+
+                        <div class="pq-mission-meta">
+                            <span>🏠 Shelter Mission</span>
+                            <span>⭐ 100 points</span>
+                        </div>
+
+                        <h3>Build a Cozy Corner</h3>
+
+                        <p>
+                            Help arrange a safe, dry, weather-protected
+                            resting space for a street dog.
+                        </p>
+
+                        <ul class="pq-mission-details">
+                            <li>Use safe, suitable materials.</li>
+                            <li>Keep bedding clean and dry.</li>
+                            <li>Choose a location that does not block traffic.</li>
+                        </ul>
+
+                        <a
+                            href="#submit-mission"
+                            class="pq-button pq-button-primary pq-mission-button">
+                            Take This Quest →
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MISSION 2 -->
+                <article class="pq-mission-card">
+
+                    <div class="pq-mission-image">
+                        <img
+                            src="images/quest-water.jpg"
+                            alt="A volunteer placing clean drinking water for a dog">
+
+                        <span class="pq-mission-tag">
+                            Everyday Care
+                        </span>
+                    </div>
+
+                    <div class="pq-mission-content">
+
+                        <div class="pq-mission-meta">
+                            <span>💧 Water Mission</span>
+                            <span>⭐ 30 points</span>
+                        </div>
+
+                        <h3>Hydration Hero</h3>
+
+                        <p>
+                            Make clean drinking water available
+                            in a safe spot for street dogs.
+                        </p>
+
+                        <ul class="pq-mission-details">
+                            <li>Use a clean water bowl.</li>
+                            <li>Place it away from moving vehicles.</li>
+                            <li>Refill and clean it regularly.</li>
+                        </ul>
+
+                        <a
+                            href="#submit-mission"
+                            class="pq-button pq-button-primary pq-mission-button">
+                            Take This Quest →
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MISSION 3 -->
+                <article class="pq-mission-card">
+
+                    <div class="pq-mission-image">
+                        <img
+                            src="images/quest-feeding.jpg"
+                            alt="A volunteer feeding a street dog">
+
+                        <span class="pq-mission-tag">
+                            Food & Nutrition
+                        </span>
+                    </div>
+
+                    <div class="pq-mission-content">
+
+                        <div class="pq-mission-meta">
+                            <span>🍲 Feeding Mission</span>
+                            <span>⭐ 50 points</span>
+                        </div>
+
+                        <h3>Meal for a Paw</h3>
+
+                        <p>
+                            Provide appropriate dog food and help
+                            maintain a clean feeding area.
+                        </p>
+
+                        <ul class="pq-mission-details">
+                            <li>Choose suitable dog food.</li>
+                            <li>Offer food in a safe location.</li>
+                            <li>Remove leftover food responsibly.</li>
+                        </ul>
+
+                        <a
+                            href="#submit-mission"
+                            class="pq-button pq-button-primary pq-mission-button">
+                            Take This Quest →
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MISSION 4 -->
+                <article class="pq-mission-card">
+
+                    <div class="pq-mission-image">
+                        <img
+                            src="images/quest-rescue.jpg"
+                            alt="An animal welfare volunteer helping a street dog">
+
+                        <span class="pq-mission-tag">
+                            Community Care
+                        </span>
+                    </div>
+
+                    <div class="pq-mission-content">
+
+                        <div class="pq-mission-meta">
+                            <span>🤝 Helping Mission</span>
+                            <span>⭐ 75 points</span>
+                        </div>
+
+                        <h3>Kindness Connector</h3>
+
+                        <p>
+                            Help connect a dog in need with a
+                            responsible animal-welfare group or vet.
+                        </p>
+
+                        <ul class="pq-mission-details">
+                            <li>Record the concern accurately.</li>
+                            <li>Contact a suitable local service.</li>
+                            <li>Never approach a dangerous or severely injured dog.</li>
+                        </ul>
+
+                        <a
+                            href="#submit-mission"
+                            class="pq-button pq-button-primary pq-mission-button">
+                            Take This Quest →
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROGRESS / REWARDS ================= -->
+        <section class="pq-rewards section-padding">
+
+            <div class="pq-rewards-content">
+
+                <span class="pq-eyebrow">KINDNESS DESERVES RECOGNITION</span>
+
+                <h2>Your Good Deeds Deserve a Little Spotlight.</h2>
+
+                <p>
+                    Every approved mission brings you closer to new
+                    badges, community recognition, and the monthly
+                    PawStar award.
+                </p>
+
+                <a href="#leaderboard" class="pq-button pq-button-primary">
+                    Discover the Rewards →
+                </a>
+
+            </div>
+
+            <div class="pq-badge-grid">
+
+                <div class="pq-badge-card">
+                    <div class="pq-badge-icon">💧</div>
+                    <h3>Hydration Hero</h3>
+                    <p>For helping provide clean water.</p>
+                </div>
+
+                <div class="pq-badge-card">
+                    <div class="pq-badge-icon">🏠</div>
+                    <h3>Shelter Superstar</h3>
+                    <p>For supporting safe resting spaces.</p>
+                </div>
+
+                <div class="pq-badge-card">
+                    <div class="pq-badge-icon">❤️</div>
+                    <h3>Kindness Champion</h3>
+                    <p>For making a positive difference.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEADERBOARD ================= -->
+        <section class="pq-leaderboard-section section-padding" id="leaderboard">
+
+            <div class="pq-section-heading">
+                <span class="pq-eyebrow">CELEBRATING OUR COMMUNITY</span>
+
+                <h2>The PawQuest Leaderboard</h2>
+
+                <p>
+                    Every point represents an approved act of kindness.
+                    Who will become this month's PawStar?
+                </p>
+            </div>
+
+            <div class="pq-leaderboard">
+
+                <div class="pq-leaderboard-header">
+                    <h3>🏆 Monthly Paw Champions</h3>
+                    <span class="pq-season-label">MONTHLY CHALLENGE</span>
+                </div>
+
+                <div class="pq-leader-row pq-first-place">
+                    <span class="pq-rank">🥇</span>
+
+                    <div class="pq-player">
+                        <div class="pq-avatar">A</div>
+                        <div>
+                            <strong>Example Player 1</strong>
+                            <span>Shelter Superstar</span>
+                        </div>
+                    </div>
+
+                    <strong class="pq-player-score">480 pts</strong>
+                </div>
+
+                <div class="pq-leader-row">
+                    <span class="pq-rank">🥈</span>
+
+                    <div class="pq-player">
+                        <div class="pq-avatar">B</div>
+                        <div>
+                            <strong>Example Player 2</strong>
+                            <span>Kindness Champion</span>
+                        </div>
+                    </div>
+
+                    <strong class="pq-player-score">390 pts</strong>
+                </div>
+
+                <div class="pq-leader-row">
+                    <span class="pq-rank">🥉</span>
+
+                    <div class="pq-player">
+                        <div class="pq-avatar">C</div>
+                        <div>
+                            <strong>Example Player 3</strong>
+                            <span>Hydration Hero</span>
+                        </div>
+                    </div>
+
+                    <strong class="pq-player-score">310 pts</strong>
+                </div>
+
+                <p class="pq-demo-note">
+                    These are sample entries for the design.
+                    Replace them with verified scores before publishing
+                    a real leaderboard.
+                </p>
+
+            </div>
+
+            <!-- Monthly prize -->
+            <div class="pq-prize-card">
+
+                <div class="pq-prize-icon">🎁</div>
+
+                <div>
+                    <span class="pq-eyebrow">MONTHLY SPECIAL RECOGNITION</span>
+
+                    <h3>Meet Our PawStar of the Month!</h3>
+
+                    <p>
+                        The highest-scoring eligible participant can
+                        receive a gift, a special mention on PawConnect,
+                        and an appreciation certificate.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUBMISSION FORM ================= -->
+        <section class="pq-submit-section section-padding" id="submit-mission">
+
+            <div class="pq-section-heading">
+                <span class="pq-eyebrow">YOUR STORY MATTERS</span>
+
+                <h2>Share Your PawQuest</h2>
+
+                <p>
+                    Completed a mission? Tell us what you did.
+                    Our team can review your submission before
+                    awarding points.
+                </p>
+            </div>
+
+            <div class="pq-form-container">
+
+                <form id="pq-mission-form" enctype="multipart/form-data">
+
+                    <div class="pq-form-intro">
+                        <span>🐾</span>
+                        <div>
+                            <h3>Mission Submission</h3>
+                            <p>Tell us about your act of kindness.</p>
+                        </div>
+                    </div>
+
+                    <!-- Participant name -->
+                    <div class="pq-form-group">
+                        <label for="pq-name">Your name or nickname *</label>
+
+                        <input
+                            type="text"
+                            id="pq-name"
+                            name="participant_name"
+                            placeholder="How should we call you?"
+                            maxlength="60"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="pq-form-group">
+                        <label for="pq-email">Email address *</label>
+
+                        <input
+                            type="email"
+                            id="pq-email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+
+                        <small>
+                            Used to contact you about your submission
+                            and competition results.
+                        </small>
+                    </div>
+
+                    <!-- Mission choice -->
+                    <div class="pq-form-group">
+                        <label for="pq-mission">Which mission did you complete? *</label>
+
+                        <select id="pq-mission" name="mission" required>
+                            <option value="">Choose your mission</option>
+                            <option value="shelter">Build a Cozy Corner</option>
+                            <option value="water">Hydration Hero</option>
+                            <option value="food">Meal for a Paw</option>
+                            <option value="rescue">Kindness Connector</option>
+                        </select>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="pq-form-group">
+                        <label for="pq-date">Date you completed the mission *</label>
+
+                        <input
+                            type="date"
+                            id="pq-date"
+                            name="completion_date"
+                            required>
+                    </div>
+
+                    <!-- Story -->
+                    <div class="pq-form-group">
+                        <label for="pq-story">Tell us your story *</label>
+
+                        <textarea
+                            id="pq-story"
+                            name="mission_description"
+                            rows="5"
+                            maxlength="1500"
+                            placeholder="What did you do? How did it help the dog?"
+                            required></textarea>
+                    </div>
+
+                    <!-- Photo -->
+                    <div class="pq-form-group">
+                        <label for="pq-photo">Upload supporting photo (optional)</label>
+
+                        <input
+                            type="file"
+                            id="pq-photo"
+                            name="mission_photo"
+                            accept="image/jpeg,image/png,image/webp">
+
+                        <small>
+                            Use JPG, PNG, or WebP images.
+                            Maximum file size should be enforced by
+                            the server. Do not upload photos of people
+                            without their permission.
+                        </small>
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="pq-consent-group">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="pq-confirm"
+                                name="truth_confirmation"
+                                value="yes"
+                                required>
+
+                            I confirm that my submission describes a
+                            genuine activity and agree to have it
+                            reviewed before points are awarded.
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="pq-public-consent"
+                                name="public_feature_consent"
+                                value="yes">
+
+                            I am happy for PawConnect to contact me
+                            about featuring my story publicly.
+                            I understand that this permission is optional.
+                        </label>
+
+                    </div>
+
+                    <button type="submit" class="pq-button pq-button-primary pq-submit-button">
+                        Submit My Mission 🐾
+                    </button>
+
+                    <p class="pq-form-note">
+                        Submissions are not automatically awarded points.
+                        The PawConnect team must review them first.
+                    </p>
+
+                    <p
+                        id="pq-form-message"
+                        class="pq-form-message"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SAFETY SECTION ================= -->
+        <section class="pq-safety section-padding">
+
+            <div class="pq-safety-icon">🛡️</div>
+
+            <div>
+                <h2>Kindness First. Safety Always.</h2>
+
+                <p>
+                    Never put yourself or a dog in danger to complete
+                    a quest. Do not approach aggressive or severely
+                    injured dogs. Contact trained rescuers or a
+                    veterinarian when professional help is needed.
+                </p>
+
+                <a href="health-guide.html">
+                    Learn about street dog health and safety →
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="pq-footer">
+
+        <div class="pq-footer-content">
+
+            <div>
+                <a href="index.html" class="pq-logo">
+                    🐾 PawConnect
+                </a>
+
+                <p>
+                    Every small act of kindness can make
+                    the world safer for street dogs.
+                </p>
+            </div>
+
+            <div class="pq-footer-links">
+                <a href="index.html">Home</a>
+                <a href="health-guide.html">PawCare Guide</a>
+                <a href="index.html#report">Report a Dog</a>
+                <a href="#missions">PawQuest Missions</a>
+                <a href="#leaderboard">Leaderboard</a>
+            </div>
+
+        </div>
+
+        <div class="pq-footer-bottom">
+            <p>© 2026 PawConnect. Made with ❤️ for street dogs.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript will be added in a later step -->
+    <script src="js/pawquest.js"></script>
+
+</body>
+</html>
