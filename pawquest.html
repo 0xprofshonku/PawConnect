@@ -699,6 +699,354 @@
             </div>
 
         </section>
+        
+<!-- ================= USER REVIEWS & RATINGS ================= -->
+<section class="pq-reviews section-padding" id="reviews">
+
+    <div class="pq-section-heading">
+        <span class="pq-eyebrow">PAWSITIVE EXPERIENCES 💚</span>
+
+        <h2>Kindness Stories That Inspire Us</h2>
+
+        <p>
+            Every volunteer has a story. Share your experience,
+            celebrate the little victories, and inspire someone
+            else to help a street dog.
+        </p>
+    </div>
+
+    <!-- Overall rating summary -->
+    <div class="pq-rating-summary">
+
+        <div class="pq-rating-overview">
+            <h3>4.9<span>/5</span></h3>
+
+            <div class="pq-stars-display" aria-label="Example rating: 4.9 out of 5">
+                ★★★★★
+            </div>
+
+            <p>Community experience rating</p>
+        </div>
+
+        <div class="pq-rating-message">
+            <span class="pq-rating-heart">💚</span>
+
+            <div>
+                <h3>Every paw matters. Every voice counts.</h3>
+                <p>
+                    Your feedback helps us improve our missions,
+                    support our volunteers, and help more dogs
+                    in our communities.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Review cards -->
+    <div class="pq-reviews-grid">
+
+        <article class="pq-review-card">
+
+            <div class="pq-review-top">
+                <div class="pq-review-avatar">A</div>
+
+                <div class="pq-review-user">
+                    <h3>Example Volunteer A</h3>
+                    <span>Community Volunteer</span>
+                </div>
+
+                <span class="pq-review-badge">🐾 Paw Hero</span>
+            </div>
+
+            <div class="pq-review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+            </div>
+
+            <h4>A small act made a big difference!</h4>
+
+            <p>
+                I helped arrange a dry resting spot for a street dog
+                near my neighbourhood. PawQuest made helping feel
+                organised and encouraged me to keep going.
+            </p>
+
+            <div class="pq-review-footer">
+                <span>🏠 Shelter Mission</span>
+                <span>Example review</span>
+            </div>
+
+        </article>
+
+
+        <article class="pq-review-card">
+
+            <div class="pq-review-top">
+                <div class="pq-review-avatar pq-avatar-orange">R</div>
+
+                <div class="pq-review-user">
+                    <h3>Example Volunteer B</h3>
+                    <span>Community Volunteer</span>
+                </div>
+
+                <span class="pq-review-badge">💧 Water Hero</span>
+            </div>
+
+            <div class="pq-review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+            </div>
+
+            <h4>Helping is easier when we work together.</h4>
+
+            <p>
+                I started keeping clean drinking water available
+                in a safe place. I love the idea of bringing
+                people together for a cause that matters.
+            </p>
+
+            <div class="pq-review-footer">
+                <span>💧 Water Mission</span>
+                <span>Example review</span>
+            </div>
+
+        </article>
+
+
+        <article class="pq-review-card">
+
+            <div class="pq-review-top">
+                <div class="pq-review-avatar pq-avatar-purple">M</div>
+
+                <div class="pq-review-user">
+                    <h3>Example Volunteer C</h3>
+                    <span>Community Volunteer</span>
+                </div>
+
+                <span class="pq-review-badge">❤️ Kindness Hero</span>
+            </div>
+
+            <div class="pq-review-stars" aria-label="4 out of 5 stars">
+                ★★★★☆
+            </div>
+
+            <h4>A meaningful way to give back.</h4>
+
+            <p>
+                I learned more about street dog care and how to
+                contact the right people when a dog needs help.
+                I would love to take part in more missions.
+            </p>
+
+            <div class="pq-review-footer">
+                <span>🤝 Community Mission</span>
+                <span>Example review</span>
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- Write a review form -->
+    <div class="pq-review-form-wrapper" id="write-review">
+
+        <div class="pq-review-form-heading">
+            <span class="pq-eyebrow">YOUR EXPERIENCE MATTERS</span>
+
+            <h2>How Was Your PawConnect Experience?</h2>
+
+            <p>
+                Worked with us or completed a mission?
+                We'd love to hear what you think.
+            </p>
+        </div>
+
+        <form class="pq-review-form" id="pq-review-form">
+
+            <div class="pq-review-form-row">
+
+                <div class="pq-review-field">
+                    <label for="pq-review-name">Your name *</label>
+
+                    <input
+                        type="text"
+                        id="pq-review-name"
+                        name="reviewer_name"
+                        placeholder="Enter your name or nickname"
+                        maxlength="60"
+                        required>
+                </div>
+
+                <div class="pq-review-field">
+                    <label for="pq-review-email">Email address *</label>
+
+                    <input
+                        type="email"
+                        id="pq-review-email"
+                        name="reviewer_email"
+                        placeholder="you@example.com"
+                        required>
+
+                    <small>Your email won't be displayed publicly.</small>
+                </div>
+
+            </div>
+
+
+            <div class="pq-review-field">
+                <label for="pq-review-experience">
+                    What did you participate in? *
+                </label>
+
+                <select
+                    id="pq-review-experience"
+                    name="experience_type"
+                    required>
+
+                    <option value="">Select your experience</option>
+                    <option value="shelter">Shelter Mission</option>
+                    <option value="feeding">Feeding Mission</option>
+                    <option value="water">Water Mission</option>
+                    <option value="rescue">Helping a Dog in Need</option>
+                    <option value="volunteer">Volunteering with PawConnect</option>
+                    <option value="other">Other Experience</option>
+
+                </select>
+            </div>
+
+
+            <!-- Star rating: CSS makes the stars interactive -->
+            <fieldset class="pq-rating-fieldset">
+
+                <legend>Rate your experience *</legend>
+
+                <div class="pq-star-picker">
+
+                    <input
+                        type="radio"
+                        id="pq-star-5"
+                        name="review_rating"
+                        value="5"
+                        required>
+                    <label for="pq-star-5" title="5 stars">★</label>
+
+                    <input
+                        type="radio"
+                        id="pq-star-4"
+                        name="review_rating"
+                        value="4">
+                    <label for="pq-star-4" title="4 stars">★</label>
+
+                    <input
+                        type="radio"
+                        id="pq-star-3"
+                        name="review_rating"
+                        value="3">
+                    <label for="pq-star-3" title="3 stars">★</label>
+
+                    <input
+                        type="radio"
+                        id="pq-star-2"
+                        name="review_rating"
+                        value="2">
+                    <label for="pq-star-2" title="2 stars">★</label>
+
+                    <input
+                        type="radio"
+                        id="pq-star-1"
+                        name="review_rating"
+                        value="1">
+                    <label for="pq-star-1" title="1 star">★</label>
+
+                </div>
+
+                <small>Choose from 1 star to 5 stars.</small>
+
+            </fieldset>
+
+
+            <div class="pq-review-field">
+                <label for="pq-review-title">Give your review a title *</label>
+
+                <input
+                    type="text"
+                    id="pq-review-title"
+                    name="review_title"
+                    placeholder="E.g. An amazing experience!"
+                    maxlength="100"
+                    required>
+            </div>
+
+
+            <div class="pq-review-field">
+                <label for="pq-review-text">Share your experience *</label>
+
+                <textarea
+                    id="pq-review-text"
+                    name="review_text"
+                    rows="5"
+                    maxlength="1500"
+                    placeholder="What went well? What could we improve?"
+                    required></textarea>
+            </div>
+
+
+            <div class="pq-review-consent">
+
+                <input
+                    type="checkbox"
+                    id="pq-review-public"
+                    name="review_public_consent"
+                    value="yes"
+                    required>
+
+                <label for="pq-review-public">
+                    I confirm that this review reflects my genuine
+                    experience and agree to its publication after
+                    moderation. I will not include private information
+                    about other people.
+                </label>
+
+            </div>
+
+
+            <button type="submit" class="pq-button pq-button-primary pq-review-submit">
+                Share My Experience 💚
+            </button>
+
+            <p class="pq-review-note">
+                Reviews are subject to moderation before appearing
+                publicly. Please do not include private email addresses
+                or sensitive personal information in your review.
+            </p>
+
+            <p
+                id="pq-review-message"
+                class="pq-review-message"
+                role="status"
+                aria-live="polite">
+            </p>
+
+        </form>
+
+    </div>
+
+    <div class="pq-review-cta">
+        <h3>Haven't joined us yet?</h3>
+
+        <p>
+            Your first act of kindness could be the beginning
+            of a wonderful story.
+        </p>
+
+        <a href="#missions" class="pq-button pq-button-primary">
+            Explore PawQuest Missions →
+        </a>
+    </div>
+
+</section>
+
 
     </main>
 
